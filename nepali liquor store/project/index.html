@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Liquor Store - Royal Nepali Spirits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Age Verification Modal -->
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <h2>Age Verification Required</h2>
+            <p>You must be 21 years or older to enter this website.</p>
+            <div class="modal-buttons">
+                <button id="confirmAge" class="btn-primary">I am 21 or older</button>
+                <button id="denyAge" class="btn-secondary">I am under 21</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Royal Liquor</h1>
+                <span>Royal Liquor Store</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search liquors...">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <button class="cart-btn" onclick="toggleCart()">
+                    🛒 <span id="cartCount">0</span>
+                </button>
+                <div class="auth-buttons">
+                    <button class="auth-btn login-btn" onclick="showAuthModal('login')">Login</button>
+                    <button class="auth-btn signup-btn" onclick="showAuthModal('signup')">Sign Up</button>
+                    <div class="user-menu" id="userMenu" style="display: none;">
+                        <span class="user-name" id="userName"></span>
+                        <button class="logout-btn" onclick="logout()">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Royal Liquor Store</h1>
+            <p>Discover the finest collection of authentic Nepali liquors, crafted with tradition and excellence</p>
+            <button class="cta-btn" onclick="scrollToProducts()">Explore Collection</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/602750/pexels-photo-602750.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Premium Liquor Collection">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Our Royal Collection</h2>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="whisky">Whisky</button>
+                <button class="filter-btn" data-filter="rum">Rum</button>
+                <button class="filter-btn" data-filter="beer">Beer</button>
+                <button class="filter-btn" data-filter="vodka">Vodka</button>
+                <button class="filter-btn" data-filter="wine">Wine</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Royal Liquor Store</h2>
+                <p>Established in the heart of Nepalgunj, Royal Liquor Store has been serving Nepal's finest spirits for over two decades. We pride ourselves on offering authentic Nepali brands alongside premium international selections.</p>
+                <div class="features">
+                    <div class="feature">
+                        <h3>🏆 Premium Quality</h3>
+                        <p>Only the finest, authentic liquors</p>
+                    </div>
+                    <div class="feature">
+                        <h3>🚚 Fast Delivery</h3>
+                        <p>Same-day delivery in Nepalgunj Valley</p>
+                    </div>
+                    <div class="feature">
+                        <h3>💎 Authentic Brands</h3>
+                        <p>Direct from authorized distributors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Visit Our Store</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>M.P.road, Nepalgunj<br>Nepal</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p>+977-1-4234567<br>+977-9801234567</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🕒 Hours</h3>
+                    <p>Sun-Fri: 10:00 AM - 9:00 PM<br>Saturday: 10:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: NPR <span id="cartTotal">0</span></strong>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cartOverlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <!-- Authentication Modal -->
+    <div id="authModal" class="modal" style="display: none;">
+        <div class="modal-content auth-modal-content">
+            <div class="auth-header">
+                <h2 id="authTitle">Login</h2>
+                <button class="close-auth" onclick="closeAuthModal()">×</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="auth-submit-btn">Login</button>
+                <p class="auth-switch">
+                    Don't have an account? 
+                    <a href="#" onclick="switchAuthMode('signup')">Sign up here</a>
+                </p>
+            </form>
+            
+            <!-- Signup Form -->
+            <form id="signupForm" class="auth-form" style="display: none;">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPhone">Phone Number</label>
+                    <input type="tel" id="signupPhone" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" class="form-input" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" class="form-input" required>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="agreeTerms" required>
+                    <label for="agreeTerms">I agree to the Terms & Conditions and Privacy Policy</label>
+                </div>
+                <button type="submit" class="auth-submit-btn">Create Account</button>
+                <p class="auth-switch">
+                    Already have an account? 
+                    <a href="#" onclick="switchAuthMode('login')">Login here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Load JavaScript files in the correct order -->
+    <script src="js/data-loader.js"></script>
+    <script src="js/integration-example.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

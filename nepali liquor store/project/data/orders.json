@@ -1,0 +1,201 @@
+{
+  "orders": [
+    {
+      "id": "ORD001",
+      "userId": 1,
+      "customerName": "Ram Bahadur Thapa",
+      "customerEmail": "ram.thapa@example.com",
+      "customerPhone": "+977-9801234567",
+      "deliveryAddress": {
+        "street": "123 Main Street",
+        "city": "Nepalgunj",
+        "district": "Banke",
+        "postalCode": "21900"
+      },
+      "items": [
+        {
+          "productId": 1,
+          "name": "Khukuri Rum XXX",
+          "category": "rum",
+          "price": 1850,
+          "quantity": 2,
+          "subtotal": 3700
+        }
+      ],
+      "subtotal": 3700,
+      "deliveryFee": 200,
+      "total": 3900,
+      "paymentMethod": "cash_on_delivery",
+      "paymentStatus": "pending",
+      "orderStatus": "confirmed",
+      "orderDate": "2024-01-15T14:30:00Z",
+      "estimatedDelivery": "2024-01-15T18:00:00Z",
+      "actualDelivery": "2024-01-15T17:45:00Z",
+      "notes": "Please deliver after 6 PM"
+    },
+    {
+      "id": "ORD002",
+      "userId": 2,
+      "customerName": "Sita Devi Shrestha",
+      "customerEmail": "sita.shrestha@example.com",
+      "customerPhone": "+977-9802345678",
+      "deliveryAddress": {
+        "street": "456 Oak Avenue",
+        "city": "Kohalpur",
+        "district": "Banke",
+        "postalCode": "21901"
+      },
+      "items": [
+        {
+          "productId": 14,
+          "name": "Royal Wine Red",
+          "category": "wine",
+          "price": 2500,
+          "quantity": 1,
+          "subtotal": 2500
+        },
+        {
+          "productId": 6,
+          "name": "Gorkha Beer Premium",
+          "category": "beer",
+          "price": 320,
+          "quantity": 6,
+          "subtotal": 1920
+        }
+      ],
+      "subtotal": 4420,
+      "deliveryFee": 0,
+      "total": 4420,
+      "paymentMethod": "cash_on_delivery",
+      "paymentStatus": "paid",
+      "orderStatus": "delivered",
+      "orderDate": "2024-01-18T16:15:00Z",
+      "estimatedDelivery": "2024-01-18T20:00:00Z",
+      "actualDelivery": "2024-01-18T19:30:00Z",
+      "notes": "Handle with care"
+    },
+    {
+      "id": "ORD003",
+      "userId": 1,
+      "customerName": "Ram Bahadur Thapa",
+      "customerEmail": "ram.thapa@example.com",
+      "customerPhone": "+977-9801234567",
+      "deliveryAddress": {
+        "street": "123 Main Street",
+        "city": "Nepalgunj",
+        "district": "Banke",
+        "postalCode": "21900"
+      },
+      "items": [
+        {
+          "productId": 2,
+          "name": "Old Durbar Whisky",
+          "category": "whisky",
+          "price": 2200,
+          "quantity": 1,
+          "subtotal": 2200
+        },
+        {
+          "productId": 9,
+          "name": "Royal Stag Whisky",
+          "category": "whisky",
+          "price": 2400,
+          "quantity": 1,
+          "subtotal": 2400
+        }
+      ],
+      "subtotal": 4600,
+      "deliveryFee": 0,
+      "total": 4600,
+      "paymentMethod": "cash_on_delivery",
+      "paymentStatus": "pending",
+      "orderStatus": "processing",
+      "orderDate": "2024-01-20T11:00:00Z",
+      "estimatedDelivery": "2024-01-20T15:00:00Z",
+      "actualDelivery": null,
+      "notes": ""
+    }
+  ],
+  "orderStatuses": [
+    {
+      "id": "pending",
+      "name": "Pending",
+      "description": "Order is pending confirmation",
+      "color": "#FFA500"
+    },
+    {
+      "id": "confirmed",
+      "name": "Confirmed",
+      "description": "Order has been confirmed",
+      "color": "#0000FF"
+    },
+    {
+      "id": "processing",
+      "name": "Processing",
+      "description": "Order is being prepared",
+      "color": "#FFD700"
+    },
+    {
+      "id": "out_for_delivery",
+      "name": "Out for Delivery",
+      "description": "Order is out for delivery",
+      "color": "#FF69B4"
+    },
+    {
+      "id": "delivered",
+      "name": "Delivered",
+      "description": "Order has been delivered",
+      "color": "#008000"
+    },
+    {
+      "id": "cancelled",
+      "name": "Cancelled",
+      "description": "Order has been cancelled",
+      "color": "#FF0000"
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": "cash_on_delivery",
+      "name": "Cash on Delivery",
+      "description": "Pay when you receive your order"
+    },
+    {
+      "id": "esewa",
+      "name": "eSewa",
+      "description": "Pay using eSewa digital wallet"
+    },
+    {
+      "id": "khalti",
+      "name": "Khalti",
+      "description": "Pay using Khalti digital wallet"
+    },
+    {
+      "id": "bank_transfer",
+      "name": "Bank Transfer",
+      "description": "Direct bank transfer"
+    }
+  ],
+  "paymentStatuses": [
+    {
+      "id": "pending",
+      "name": "Pending",
+      "description": "Payment is pending"
+    },
+    {
+      "id": "paid",
+      "name": "Paid",
+      "description": "Payment has been received"
+    },
+    {
+      "id": "failed",
+      "name": "Failed",
+      "description": "Payment failed"
+    },
+    {
+      "id": "refunded",
+      "name": "Refunded",
+      "description": "Payment has been refunded"
+    }
+  ]
+}

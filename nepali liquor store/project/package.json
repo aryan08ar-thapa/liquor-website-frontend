@@ -1,0 +1,33 @@
+{
+  "name": "royal-liquor-store",
+  "version": "1.0.0",
+  "description": "Premium Nepali Liquor Store - Royal Nepali Spirits",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "liquor",
+    "store",
+    "nepal",
+    "ecommerce",
+    "royal",
+    "spirits"
+  ],
+  "author": "Royal Liquor Store",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/royal-liquor-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/royal-liquor-store/issues"
+  },
+  "homepage": "https://github.com/yourusername/royal-liquor-store#readme"
+}

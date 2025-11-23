@@ -1,0 +1,244 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Khukuri Rum XXX",
+      "category": "rum",
+      "price": 1850,
+      "image": "images/khukurirum.png",
+      "description": "Premium aged rum from Nepal's finest distillery",
+      "badge": "Best Seller"
+    },
+    {
+      "id": 2,
+      "name": "Old Durbar Whisky",
+      "category": "whisky",
+      "price": 2200,
+      "image": "images/olddurbar.png",
+      "description": "Smooth blended whisky with rich Himalayan heritage",
+      "badge": "Premium"
+    },
+    {
+      "id": 3,
+      "name": "Signature Whisky Reserve",
+      "category": "whisky",
+      "price": 2800,
+      "image": "images/Signature.jpg",
+      "description": "Aged 12 years, double distilled for premium taste",
+      "badge": "Limited"
+    },
+    {
+      "id": 4,
+      "name": "Ruslan Vodka Premium",
+      "category": "vodka",
+      "price": 1650,
+      "image": "images/Ruslan.jpg",
+      "description": "Crystal clear vodka with smooth finish",
+      "badge": "Popular"
+    },
+    {
+      "id": 5,
+      "name": "Coronation Rum Gold",
+      "category": "rum",
+      "price": 1950,
+      "image": "images/coronation.jpeg",
+      "description": "Golden rum with tropical notes and smooth finish",
+      "badge": "New"
+    },
+    {
+      "id": 6,
+      "name": "Gorkha Beer Premium",
+      "category": "beer",
+      "price": 320,
+      "image": "images/gorkha.jpeg",
+      "description": "Nepal's finest lager beer, crisp and refreshing",
+      "badge": "Local"
+    },
+    {
+      "id": 7,
+      "name": "Everest Beer Strong",
+      "category": "beer",
+      "price": 280,
+      "image": "images/everest.jpeg",
+      "description": "Strong beer with 8% alcohol content",
+      "badge": "Strong"
+    },
+    {
+      "id": 8,
+      "name": "Tuborg Beer",
+      "category": "beer",
+      "price": 290,
+      "image": "images/Tuborg.webp",
+      "description": "International premium lager beer",
+      "badge": "Import"
+    },
+    {
+      "id": 9,
+      "name": "Royal Stag Whisky",
+      "category": "whisky",
+      "price": 2400,
+      "image": "images/royalstag.jpeg",
+      "description": "Smooth blend of grain and malt whiskies",
+      "badge": "Premium"
+    },
+    {
+      "id": 10,
+      "name": "Khukuri Spiced Rum",
+      "category": "rum",
+      "price": 1750,
+      "image": "images/spiced.png",
+      "description": "Spiced rum with authentic Nepali herbs and spices",
+      "badge": "Spiced"
+    },
+    {
+      "id": 11,
+      "name": "Mountain Whisky Deluxe",
+      "category": "whisky",
+      "price": 3200,
+      "image": "images/Highlandmountain.jpg",
+      "description": "Himalayan premium whisky aged in oak barrels",
+      "badge": "Deluxe"
+    },
+    {
+      "id": 12,
+      "name": "Nepal Ice Beer",
+      "category": "beer",
+      "price": 250,
+      "image": "images/nepalbeer.jpeg",
+      "description": "Light refreshing beer perfect for hot weather",
+      "badge": "Light"
+    },
+    {
+      "id": 13,
+      "name": "Himalayan Vodka Pure",
+      "category": "vodka",
+      "price": 1800,
+      "image": "images/highlander.png",
+      "description": "Pure vodka distilled from Himalayan spring water",
+      "badge": "Pure"
+    },
+    {
+      "id": 14,
+      "name": "Royal Wine Red",
+      "category": "wine",
+      "price": 2500,
+      "image": "images/royal.jpg",
+      "description": "Premium red wine with rich berry flavors",
+      "badge": "Wine"
+    },
+    {
+      "id": 15,
+      "name": "Sherpa Wine White",
+      "category": "wine",
+      "price": 2200,
+      "image": "images/sherpa.jpg",
+      "description": "Crisp white wine with floral notes",
+      "badge": "Local"
+    },
+    {
+      "id": 16,
+      "name": "Dragon Rum Dark",
+      "category": "rum",
+      "price": 2100,
+      "image": "images/dragon.avif",
+      "description": "Dark rum with caramel and vanilla notes",
+      "badge": "Dark"
+    },
+    {
+      "id": 17,
+      "name": "Ambassador Whisky",
+      "category": "whisky",
+      "price": 1950,
+      "image": "images/ambassador.jpeg",
+      "description": "Classic blended whisky with smooth character",
+      "badge": "Classic"
+    },
+    {
+      "id": 18,
+      "name": "Tiger Beer Nepal",
+      "category": "beer",
+      "price": 310,
+      "image": "images/nepaltiger.png",
+      "description": "Premium lager with distinctive taste",
+      "badge": "Premium"
+    },
+    {
+      "id": 19,
+      "name": "Crystal Vodka",
+      "category": "vodka",
+      "price": 1550,
+      "image": "images/crystal.jpeg",
+      "description": "Triple distilled vodka with crystal clarity",
+      "badge": "Crystal"
+    },
+    {
+      "id": 20,
+      "name": "Mustang Wine Rosé",
+      "category": "wine",
+      "price": 2800,
+      "image": "images/mustang.jpg",
+      "description": "Elegant rosé wine from Mustang valley",
+      "badge": "Rosé"
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Products",
+      "displayName": "All Products"
+    },
+    {
+      "id": "whisky",
+      "name": "Whisky",
+      "displayName": "Whisky"
+    },
+    {
+      "id": "rum",
+      "name": "Rum",
+      "displayName": "Rum"
+    },
+    {
+      "id": "beer",
+      "name": "Beer",
+      "displayName": "Beer"
+    },
+    {
+      "id": "vodka",
+      "name": "Vodka",
+      "displayName": "Vodka"
+    },
+    {
+      "id": "wine",
+      "name": "Wine",
+      "displayName": "Wine"
+    }
+  ],
+  "storeInfo": {
+    "name": "Royal Liquor Store",
+    "tagline": "Royal Nepali Spirits",
+    "location": "M.P.road, Nepalgunj, Nepal",
+    "phone": ["+977-1-4234567", "+977-9801234567"],
+    "hours": {
+      "weekdays": "10:00 AM - 9:00 PM",
+      "saturday": "10:00 AM - 8:00 PM",
+      "sunday": "10:00 AM - 9:00 PM"
+    },
+    "features": [
+      {
+        "icon": "🏆",
+        "title": "Premium Quality",
+        "description": "Only the finest, authentic liquors"
+      },
+      {
+        "icon": "🚚",
+        "title": "Fast Delivery",
+        "description": "Same-day delivery in Nepalgunj Valley"
+      },
+      {
+        "icon": "💎",
+        "title": "Authentic Brands",
+        "description": "Direct from authorized distributors"
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "app": {
+    "name": "Royal Liquor Store",
+    "version": "1.0.0",
+    "description": "Premium Nepali Liquor Store - Royal Nepali Spirits",
+    "currency": "NPR",
+    "currencySymbol": "₨",
+    "language": "en",
+    "timezone": "Asia/Kathmandu"
+  },
+  "ageVerification": {
+    "required": true,
+    "minimumAge": 21,
+    "message": "You must be 21 years or older to enter this website."
+  },
+  "cart": {
+    "maxItems": 50,
+    "autoSave": true,
+    "saveToLocalStorage": true
+  },
+  "search": {
+    "minQueryLength": 2,
+    "maxResults": 20,
+    "searchFields": ["name", "description", "category", "badge"]
+  },
+  "filters": {
+    "priceRanges": [
+      {
+        "label": "Under ₨500",
+        "min": 0,
+        "max": 500
+      },
+      {
+        "label": "₨500 - ₨1000",
+        "min": 500,
+        "max": 1000
+      },
+      {
+        "label": "₨1000 - ₨2000",
+        "min": 1000,
+        "max": 2000
+      },
+      {
+        "label": "₨2000 - ₨3000",
+        "min": 2000,
+        "max": 3000
+      },
+      {
+        "label": "Over ₨3000",
+        "min": 3000,
+        "max": null
+      }
+    ]
+  },
+  "delivery": {
+    "freeShippingThreshold": 5000,
+    "deliveryFee": 200,
+    "sameDayDelivery": true,
+    "deliveryAreas": [
+      "Nepalgunj",
+      "Kohalpur",
+      "Bheri",
+      "Banke"
+    ]
+  },
+  "contact": {
+    "email": "info@royalliquorstore.com",
+    "phone": "+977-1-4234567",
+    "mobile": "+977-9801234567",
+    "address": "M.P.road, Nepalgunj, Nepal",
+    "socialMedia": {
+      "facebook": "https://facebook.com/royalliquorstore",
+      "instagram": "https://instagram.com/royalliquorstore",
+      "twitter": "https://twitter.com/royalliquorstore"
+    }
+  },
+  "businessHours": {
+    "sunday": "10:00 AM - 9:00 PM",
+    "monday": "10:00 AM - 9:00 PM",
+    "tuesday": "10:00 AM - 9:00 PM",
+    "wednesday": "10:00 AM - 9:00 PM",
+    "thursday": "10:00 AM - 9:00 PM",
+    "friday": "10:00 AM - 9:00 PM",
+    "saturday": "10:00 AM - 8:00 PM"
+  },
+  "features": {
+    "ageVerification": true,
+    "search": true,
+    "filters": true,
+    "cart": true,
+    "authentication": true,
+    "responsive": true,
+    "localStorage": true
+  },
+  "ui": {
+    "theme": "light",
+    "primaryColor": "#8B4513",
+    "secondaryColor": "#D2691E",
+    "accentColor": "#FFD700",
+    "fontFamily": {
+      "heading": "Playfair Display, serif",
+      "body": "Inter, sans-serif"
+    }
+  }
+}

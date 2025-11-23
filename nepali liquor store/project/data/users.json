@@ -1,0 +1,111 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ram Bahadur Thapa",
+      "email": "ram.thapa@example.com",
+      "phone": "+977-9801234567",
+      "password": "hashed_password_here",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Nepalgunj",
+        "district": "Banke",
+        "postalCode": "21900"
+      },
+      "preferences": {
+        "favoriteCategories": ["whisky", "rum"],
+        "newsletter": true,
+        "notifications": true
+      },
+      "orderHistory": [
+        {
+          "orderId": "ORD001",
+          "date": "2024-01-15",
+          "items": [
+            {
+              "productId": 1,
+              "name": "Khukuri Rum XXX",
+              "quantity": 2,
+              "price": 1850
+            }
+          ],
+          "total": 3700,
+          "status": "delivered"
+        }
+      ],
+      "createdAt": "2024-01-01T00:00:00Z",
+      "lastLogin": "2024-01-20T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Sita Devi Shrestha",
+      "email": "sita.shrestha@example.com",
+      "phone": "+977-9802345678",
+      "password": "hashed_password_here",
+      "address": {
+        "street": "456 Oak Avenue",
+        "city": "Kohalpur",
+        "district": "Banke",
+        "postalCode": "21901"
+      },
+      "preferences": {
+        "favoriteCategories": ["wine", "beer"],
+        "newsletter": false,
+        "notifications": true
+      },
+      "orderHistory": [
+        {
+          "orderId": "ORD002",
+          "date": "2024-01-18",
+          "items": [
+            {
+              "productId": 14,
+              "name": "Royal Wine Red",
+              "quantity": 1,
+              "price": 2500
+            },
+            {
+              "productId": 6,
+              "name": "Gorkha Beer Premium",
+              "quantity": 6,
+              "price": 320
+            }
+          ],
+          "total": 4420,
+          "status": "delivered"
+        }
+      ],
+      "createdAt": "2024-01-05T00:00:00Z",
+      "lastLogin": "2024-01-19T15:45:00Z"
+    }
+  ],
+  "userRoles": [
+    {
+      "id": "customer",
+      "name": "Customer",
+      "permissions": ["view_products", "add_to_cart", "place_order", "view_profile"]
+    },
+    {
+      "id": "admin",
+      "name": "Administrator",
+      "permissions": ["view_products", "add_to_cart", "place_order", "view_profile", "manage_products", "manage_users", "view_analytics"]
+    }
+  ],
+  "userStatuses": [
+    {
+      "id": "active",
+      "name": "Active",
+      "description": "User account is active and can place orders"
+    },
+    {
+      "id": "suspended",
+      "name": "Suspended",
+      "description": "User account is temporarily suspended"
+    },
+    {
+      "id": "banned",
+      "name": "Banned",
+      "description": "User account is permanently banned"
+    }
+  ]
+}
